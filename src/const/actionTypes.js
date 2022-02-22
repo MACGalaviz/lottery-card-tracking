@@ -1,0 +1,1 @@
+export const PRESS_CARD = "PRESS_CARD";

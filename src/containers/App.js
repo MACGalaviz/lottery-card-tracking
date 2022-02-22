@@ -3,7 +3,7 @@ import thunkMiddleware from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import appStore from '../reducers';
-import Welcome from '../components/Welcome';
+import Cards from './Cards';
 
 const middleWare = applyMiddleware(thunkMiddleware)
 
@@ -15,7 +15,7 @@ let store = createStore(
 
 const App = () => (
   <Provider store={store}>
-    <Welcome />
+    <Cards />
   </Provider>
 )
 
